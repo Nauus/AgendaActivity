@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Contactos</h1>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="tel" id="telefono" pattern="[0-9]{9}" placeholder="Teléfono" maxlength="9" oninput="validarTelefono(this)">
+        <button onclick="agregarContacto()">Agregar Contacto</button>
+        <ul id="listaContactos"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
